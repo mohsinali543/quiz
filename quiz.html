@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Quiz </title>
+</head>
+<body>
+    <script>
+        var quiz_questions = [prompt("what is the biggest city of pakistan \n a) karachi \n b) lahore \n c) multan"),
+                              prompt("where is the burj khalifa ...\n a) china \n b) dubai \n c) uk"),
+                              prompt("where is SMIT head office ...\n a) islamabad \n b) karachi \n c) Queeta"),
+                              prompt("who is the current PM of pakistan....\n a) Imran Khan \n b) Nawaz Sharif \n c) Anwar ul Haq kakar"),
+                              prompt("Which is Capital of Pakistan..\n a) Islamabad \n b) Karachi \n c) Lahore"),
+                              prompt("Who is the first Govener General of pakistan ..\n a) Quaid-e-Azam \n b) Liaqat Ali Khan \n c) Allama Iqbal"),
+                              prompt("Fatima Jinnah was sister of..\n a) Allama iqbal \n b) Quaid-e-azam \n c) Liaqat Ali")];
+
+        var marks = 0;
+
+        if (quiz_questions[0] === "a") {
+            marks = marks + 5;
+        }
+
+        if (quiz_questions[1] === "b") {
+            marks = marks + 5;
+        }
+
+        if (quiz_questions[2] === "c") {
+            marks = marks + 5;
+        }
+
+        if (quiz_questions[3] === "a") {
+            marks = marks + 5;
+        }
+
+        if (quiz_questions[4] === "a") {
+            marks = marks + 5;
+        }
+
+        if (quiz_questions[5] === "b") {
+            marks = marks + 5;
+        }
+
+        if (marks >= 30) {
+            alert("you are passed");
+        } else if (marks < 10) {
+            alert("you are failed");
+        }
+
+        document.write("this is your final obtain mark---->" + marks);
+    </script>
+</body>
+</html>
